@@ -1,0 +1,85 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Projetcs\\MeetingExp\\ProjectApi\\ProjectApi.csproj": {}
+  },
+  "projects": {
+    "D:\\Project\\MeetingDemo\\RepoDemo\\RepoDemo.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Project\\MeetingDemo\\RepoDemo\\RepoDemo.csproj",
+        "projectName": "RepoDemo",
+        "projectPath": "D:\\Project\\MeetingDemo\\RepoDemo\\RepoDemo.csproj"
+      },
+      "frameworks": {
+        "net452": {}
+      }
+    },
+    "D:\\Projetcs\\MeetingExp\\ProjectApi\\ProjectApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projetcs\\MeetingExp\\ProjectApi\\ProjectApi.csproj",
+        "projectName": "ProjectApi",
+        "projectPath": "D:\\Projetcs\\MeetingExp\\ProjectApi\\ProjectApi.csproj",
+        "packagesPath": "C:\\Users\\kmttr\\.nuget\\packages\\",
+        "outputPath": "D:\\Projetcs\\MeetingExp\\ProjectApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kmttr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "D:\\Project\\MeetingDemo\\RepoDemo\\RepoDemo.csproj": {
+                "projectPath": "D:\\Project\\MeetingDemo\\RepoDemo\\RepoDemo.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net461": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.AspNetCore": {
+              "target": "Package",
+              "version": "[2.1.7, )"
+            },
+            "Microsoft.AspNetCore.HttpsPolicy": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.1.3, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

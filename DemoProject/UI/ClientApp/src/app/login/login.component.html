@@ -1,0 +1,19 @@
+<form class="example-form">
+  <table class="example-full-width" cellspacing="0">
+    <tr>
+      <td>
+        <input placeholder="Username" [(ngModel)]="username" name="username" required>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input placeholder="Password" [(ngModel)]="password" type="password" name="password" required>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <button (click)="login()" color="primary">Login</button>
+      </td>
+    </tr>
+  </table>
+</form>

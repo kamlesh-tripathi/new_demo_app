@@ -1,0 +1,30 @@
+<div class="col-md-12">
+  <h2> Meeting Details</h2>
+  <div class="table-responsive table-container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Meeting Subjec</th>
+          <th>Meeting Attendees</th>
+          <th>Meeting Agenda</th>
+          <th>Meeting DateTime</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let meeting of meetings">
+          <td class="hidden">{{meeting.meetingId}}</td>
+          <td>{{meeting.meetingSubject}}</td>
+          <td>{{meeting.meetingAttendees}}</td>
+          <td>{{meeting.meetingAgenda}}</td>
+          <td>{{meeting.meetingDateTime}}</td>
+          <td>
+            <button (click)="deleteEmp(meeting.meetingId)" class="btn btn-info"> Delete</button>
+            <button (click)="editEmp(meeting.meetingId)" style="margin-left: 20px;" class="btn btn-info"> Edit</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <button (click)="backButton()" class="btn btn-info"> Back</button>
+</div>  

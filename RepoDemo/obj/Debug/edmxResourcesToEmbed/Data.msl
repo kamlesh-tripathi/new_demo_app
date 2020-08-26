@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MeetingDemoModelStoreContainer" CdmEntityContainer="MeetingDemoEntities">
+    <EntitySetMapping Name="MeetingDetails">
+      <EntityTypeMapping TypeName="MeetingDemoModel.MeetingDetail">
+        <MappingFragment StoreEntitySet="MeetingDetails">
+          <ScalarProperty Name="MeetingId" ColumnName="MeetingId" />
+          <ScalarProperty Name="MeetingSubject" ColumnName="MeetingSubject" />
+          <ScalarProperty Name="MeetingAttendees" ColumnName="MeetingAttendees" />
+          <ScalarProperty Name="MeetingAgenda" ColumnName="MeetingAgenda" />
+          <ScalarProperty Name="MeetingDateTime" ColumnName="MeetingDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Usp_Login" FunctionName="MeetingDemoModel.Store.Usp_Login">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MeetingDemoModel.Usp_Login_Result">
+          <ScalarProperty Name="empid" ColumnName="empid" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="EmpDetails">
+      <EntityTypeMapping TypeName="MeetingDemoModel.EmpDetail">
+        <MappingFragment StoreEntitySet="EmpDetails">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TotalCnt" ColumnName="TotalCnt" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

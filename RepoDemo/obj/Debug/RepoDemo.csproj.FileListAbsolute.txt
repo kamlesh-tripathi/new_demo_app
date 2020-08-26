@@ -1,0 +1,10 @@
+D:\Project\MeetingDemo\RepoDemo\bin\Debug\RepoDemo.exe.config
+D:\Project\MeetingDemo\RepoDemo\bin\Debug\RepoDemo.exe
+D:\Project\MeetingDemo\RepoDemo\bin\Debug\RepoDemo.pdb
+D:\Project\MeetingDemo\RepoDemo\bin\Debug\EntityFramework.dll
+D:\Project\MeetingDemo\RepoDemo\bin\Debug\EntityFramework.xml
+D:\Project\MeetingDemo\RepoDemo\obj\Debug\RepoDemo.csprojAssemblyReference.cache
+D:\Project\MeetingDemo\RepoDemo\obj\Debug\RepoDemo.csproj.CoreCompileInputs.cache
+D:\Project\MeetingDemo\RepoDemo\obj\Debug\RepoDemo.csproj.CopyComplete
+D:\Project\MeetingDemo\RepoDemo\obj\Debug\RepoDemo.exe
+D:\Project\MeetingDemo\RepoDemo\obj\Debug\RepoDemo.pdb

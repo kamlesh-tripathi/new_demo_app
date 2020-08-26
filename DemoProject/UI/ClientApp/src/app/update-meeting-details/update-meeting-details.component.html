@@ -1,0 +1,41 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Meeeting Details</h2>
+  <form [formGroup]="addForm" novalidate class="form">
+    <div class="form-group">
+      <label for="empName">Meeting Subject:</label>
+      <input formControlName="meeting_subject" placeholder="Meeting Subject" name="meetingSubject" class="form-control" id="meetingSubject">
+      <div class="alert  alert-danger" *ngIf="addForm.get('meeting_subject').hasError('required') && addForm.get('meeting_subject').hasError('maxlength') && addForm.get('meeting_subject').touched">
+        Meeting Subject is required
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="empName">Meeting Attendees:</label>
+      <ng-multiselect-dropdown [placeholder]="'Meeting Attendees'"
+                               formControlName="meeting_attendees"
+                               name="meeting_attendees"
+                               id="meeting_attendees"
+                               [data]="dropdownList"
+                               [(ngModel)]="selectedItems"
+                               [settings]="dropdownSettings">
+      </ng-multiselect-dropdown>
+      <div class="alert  alert-danger" *ngIf="addForm.get('meeting_attendees').hasError('required') && addForm.get('meeting_subject').touched">
+        Meeting Attendees is required
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="empName">Meeting Agenda:</label>
+      <textarea formControlName="meeting_agenda" placeholder="Meeting Agenda" name="meetingSubject" class="form-control" id="meeting_agenda"></textarea>
+      <div class="alert  alert-danger" *ngIf="addForm.get('meeting_agenda').hasError('required') && addForm.get('meeting_agenda').hasError('maxlength') && addForm.get('meeting_agenda').touched">
+        Meeting Agenda is required
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="empName">Meeting DateTime:</label>
+      <input formControlName="meeting_dateTime" (change)="validateDate()" placeholder="Meeting DateTime" type="datetime-local" name="meeting_dateTime" class="form-control" id="meeting_dateTime">
+      <div class="alert  alert-danger" *ngIf="addForm.get('meeting_dateTime').hasError('required') && addForm.get('meeting_dateTime').touched">
+        Meeting DateTime is required
+      </div>
+    </div>
+    <button class="btn btn-success" [disabled]='addForm.invalid' (click)="onUpdate()">Update</button>
+  </form>
+</div>
